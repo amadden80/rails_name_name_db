@@ -1,0 +1,19 @@
+<h1>Great Welcome Index</h1>
+
+
+<form action="/people" method='post' >
+	<input type='text' name='person_name' placeholder='name'>
+	<input type='text' name='person_email' placeholder='email'>
+	<input type='submit'>
+</form>
+
+
+
+<ul>
+	<% @people.each do |person| %>
+		<li>
+			<%= person.name %>
+		</li>
+	<% end %>
+</ul>
+
